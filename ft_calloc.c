@@ -6,7 +6,7 @@
 /*   By: gsharony <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/09 15:44:54 by gsharony          #+#    #+#             */
-/*   Updated: 2019/10/17 08:59:30 by gsharony         ###   ########.fr       */
+/*   Updated: 2019/10/21 09:08:23 by gsharony         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*a;
 
-	if (count == 0 || size == 0)
-	{
-		count = 1;
-		size = 1;
-	}
 	if (!(a = malloc(count * size)))
 		return (NULL);
 	if (a)
